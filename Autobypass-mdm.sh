@@ -132,7 +132,6 @@ select opt in "${options[@]}"; do
 		# Remove config profiles
 		echo -e "${BLUE}Remove config profiles${NC}"
 		configProfilesSettingsPath="$systemVolumePath/var/db/ConfigurationProfiles/Settings"
-		touch "$dataVolumePath/private/var/db/.AppleSetupDone"
 		rm -rf "$configProfilesSettingsPath/.cloudConfigHasActivationRecord"
 		rm -rf "$configProfilesSettingsPath/.cloudConfigRecordFound"
 		touch "$configProfilesSettingsPath/.cloudConfigProfileInstalled"
